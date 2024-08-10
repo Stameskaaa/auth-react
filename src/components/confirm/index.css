@@ -1,0 +1,16 @@
+.confirm_modal {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.8);
+  backdrop-filter: blur(3px);
+}
+.modal_button_container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
