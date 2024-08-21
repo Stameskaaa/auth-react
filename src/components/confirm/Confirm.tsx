@@ -79,7 +79,6 @@ export const ConfirmComponent: React.FC<Props> = ({ close, showState, currentEma
       if (response?.success) {
         setErrorConfirm('');
         setNotificationData({ state: true, message: response.message, title: 'Success' });
-        // response.message
       }
     } else {
       setErrorConfirm('Try auth again');

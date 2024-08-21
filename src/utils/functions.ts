@@ -15,9 +15,7 @@ export const emailValidate = (mail: string): ValidateResponse => {
 };
 
 export const passwordValidate = (pass: string): ValidateResponse => {
-  return pass.length >= 8
-    ? { errStatus: false }
-    : pass.length === 0
-    ? { errStatus: true, errMessage: ' ' }
-    : { errStatus: true, errMessage: 'Password too short' };
+  return pass.length === 0
+    ? { errStatus: true, errMessage: 'Password too short' }
+    : { errStatus: false, errMessage: ' ' };
 };

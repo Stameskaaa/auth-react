@@ -39,7 +39,7 @@ export const AuthComponent: React.FC = () => {
   const data = location.state || {};
 
   useEffect(() => {
-    if (data.email && data.password) {
+    if (data?.email && data?.password) {
       setShowNotification(true);
       setEmail(data.email);
       setPassword(data.password);
